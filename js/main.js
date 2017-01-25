@@ -4,6 +4,10 @@ $(document).ready( function(){
   $('html').css({ 'font-size': root_size });
   $(window).resize(changeRootFontSize);
 
+  $('#dropdown').on('click', function(){
+    $('#dropdown_links').toggleClass('show');
+  });
+
   loadBouncingImages();
 })
 
