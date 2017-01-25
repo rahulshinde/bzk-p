@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
+  margin: 0;
   line-height: 1; }
 
 ol, ul {
@@ -45,5 +46,61 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.alegrya {
+  font-family: 'Alegreya Sans', sans-serif; }
+
+.astloch {
+  font-family: 'Astloch', cursive; }
+
+.highlight {
+  font-family: 'Astloch', cursive;
+  font-size: 1.8rem;
+  line-height: 1.2em; }
+
+.normal {
+  font-weight: normal; }
+
+#home {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: lighter; }
+  #home .column {
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+    text-align: left;
+    width: 40%;
+    vertical-align: top;
+    margin: 4rem 1rem;
+    font-size: 1.5rem;
+    line-height: 1.2em; }
+    #home .column img {
+      position: fixed;
+      width: 30%;
+      opacity: 1;
+      z-index: -1000; }
+    #home .column:hover img {
+      opacity: 0.2; }
+    #home .column h1 {
+      font-size: 1.8rem;
+      line-height: 1.2em;
+      text-align: center;
+      font-family: 'Astloch', cursive;
+      font-weight: normal;
+      margin-bottom: 0.5rem; }
+    #home .column .list {
+      text-align: center;
+      /*font-family: 'Astloch', cursive;*/
+      padding-bottom: 3rem; }
+      #home .column .list a:link,
+      #home .column .list a:visited {
+        color: blue;
+        text-decoration: none;
+        border-bottom: 1px solid #0000ff; }
+      #home .column .list a:hover {
+        cursor: pointer;
+        border-bottom: 1px solid rgba(255, 255, 255, 0); }
 
 /*# sourceMappingURL=main.css.map */
