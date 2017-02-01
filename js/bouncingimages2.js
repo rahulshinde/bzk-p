@@ -16,8 +16,8 @@ bouncingImages = new Object();
 // CONFIGURATION:
 
 bouncingImages.imgCount = 1;
-bouncingImages.imgWidth = 130;
-bouncingImages.imgHeight = 168;
+bouncingImages.imgWidth = 230;
+bouncingImages.imgHeight = 268;
 bouncingImages.imgSrc = 'img/home/3.png';
 
 bouncingImages.frameRate = 30;
@@ -39,6 +39,7 @@ var winWidth, winHeight;
 if (dyn) var preloadImgObj = loadImg(bouncingImages.imgSrc);
 
 $(window).resize(function(){
+   console.log('hello');
    imageResize();
 });
 

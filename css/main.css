@@ -1,3 +1,9 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /* !!! CSS RESET !!! */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -47,6 +53,13 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+a:link,
+a:visited {
+  color: blue; }
+
+a:hover {
+  text-decoration: none; }
+
 #home {
   display: inline-block;
   font-family: 'Alegreya Sans', sans-serif;
@@ -59,6 +72,19 @@ table {
     vertical-align: middle;
     margin: 4rem 1rem;
     line-height: 1.2em; }
+    @media screen and (max-width: 1000px) {
+      #home .column {
+        font-size: 1.35rem; } }
+    @media screen and (max-width: 786px) {
+      #home .column {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        font-size: 3rem; } }
+    @media screen and (max-width: 550px) {
+      #home .column {
+        width: 90%;
+        font-size: 4rem; } }
     #home .column h1 {
       font-family: 'Astloch', serif;
       text-align: center;
@@ -73,21 +99,51 @@ table {
     width: 50%;
     top: 10%;
     margin-bottom: 3rem; }
+    @media screen and (max-width: 786px) {
+      #home #recent_work {
+        position: static;
+        width: 80%;
+        margin: 5rem auto; } }
     #home #recent_work img {
       display: block;
       margin: auto;
       width: 30%;
       margin-bottom: 2rem; }
+      @media screen and (max-width: 786px) {
+        #home #recent_work img {
+          width: 60%; } }
+      @media screen and (max-width: 550px) {
+        #home #recent_work img {
+          width: 80%; } }
     #home #recent_work h1 {
       font-family: 'Astloch', serif;
       text-align: center;
       /*margin-bottom: 0.6rem;*/
       font-size: 1.8rem;
       line-height: 1.4em; }
+      @media screen and (max-width: 1000px) {
+        #home #recent_work h1 {
+          font-size: 2.2rem; } }
+      @media screen and (max-width: 786px) {
+        #home #recent_work h1 {
+          font-size: 4rem; } }
+      @media screen and (max-width: 550px) {
+        #home #recent_work h1 {
+          font-size: 5rem; } }
     #home #recent_work p {
       /*text-transform: uppercase;*/
       font-size: 1.4rem;
       line-height: 1.4em; }
+      @media screen and (max-width: 1000px) {
+        #home #recent_work p {
+          font-size: 1.8rem;
+          line-height: 1.6em; } }
+      @media screen and (max-width: 786px) {
+        #home #recent_work p {
+          font-size: 3.2rem; } }
+      @media screen and (max-width: 550px) {
+        #home #recent_work p {
+          font-size: 4.2rem; } }
   #home .links {
     position: fixed;
     bottom: 1rem;
@@ -95,6 +151,12 @@ table {
     text-align: left;
     text-transform: uppercase;
     line-height: 1.4em; }
+    @media screen and (max-width: 1000px) {
+      #home .links {
+        line-height: 1.6em; } }
+    @media screen and (max-width: 786px) {
+      #home .links {
+        position: static; } }
   #home #dropdown {
     color: blue;
     text-decoration: underline; }
@@ -137,6 +199,133 @@ table {
     background-color: white;
     padding: 1rem;
     margin-bottom: 2rem; }
+    @media screen and (max-width: 786px) {
+      #home #bio {
+        margin-bottom: 6rem; } }
+
+#projects {
+  overflow-x: hidden; }
+  #projects header {
+    position: fixed;
+    margin-top: 2rem;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 1000; }
+    #projects header h3 {
+      font-family: 'Alegreya Sans', sans-serif;
+      color: blue;
+      text-decoration: underline; }
+      #projects header h3:hover {
+        text-decoration: none;
+        cursor: pointer; }
+    #projects header #about_link {
+      text-align: right;
+      display: inline-block;
+      vertical-align: top;
+      width: 15%;
+      text-transform: uppercase; }
+    #projects header #title {
+      display: inline-block;
+      vertical-align: middle;
+      width: 60%;
+      font-family: 'Astloch', serif;
+      font-size: 1.4rem; }
+    #projects header #project_link {
+      text-align: left;
+      display: inline-block;
+      vertical-align: top;
+      width: 15%;
+      z-index: 10; }
+    #projects header #dropdown_links {
+      display: none;
+      z-index: -1000; }
+      #projects header #dropdown_links a:link,
+      #projects header #dropdown_links a:visited {
+        padding: 0.3rem 0 0.3rem 1rem;
+        display: block;
+        /*text-transform: uppercase;*/ }
+      #projects header #dropdown_links.show {
+        display: block;
+        height: auto;
+        opacity: 1;
+        z-index: 100; }
+  #projects nav {
+    /*img{
+      position: fixed;
+      width: 17rem;
+      -webkit-transform: translateY(-50%);
+    }*/ }
+    #projects nav div {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      width: 11rem;
+      padding: 0 1rem;
+      z-index: 5  0;
+      vertical-align: middle;
+      /*background: red;*/ }
+      #projects nav div img {
+        width: 100%;
+        margin-top: 50vh;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%); }
+      #projects nav div:hover {
+        cursor: pointer; }
+    #projects nav #nav_left {
+      left: 0; }
+    #projects nav #nav_right {
+      right: 0; }
+    #projects nav #arrow_left {
+      left: 0rem; }
+    #projects nav #arrow_right {
+      right: 0rem; }
+  #projects #description {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: lighter;
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    text-align: center; }
+  #projects .slideshow_container {
+    position: fixed;
+    width: 100%;
+    top: 10vh;
+    bottom: 10vh;
+    text-align: center;
+    z-index: -100; }
+  #projects .slide {
+    display: none;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    z-index: -100; }
+    #projects .slide.show {
+      opacity: 1;
+      display: inline-block; }
+  #projects .embed-container {
+    position: relative;
+    padding-bottom: 45%;
+    height: 0;
+    overflow: hidden;
+    margin: 2rem auto;
+    width: 80%; }
+  #projects .embed-container iframe,
+  #projects .embed-container object,
+  #projects .embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+  #projects #facebook_link {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: lighter;
+    text-transform: uppercase; }
 
 #grab_bag {
   display: inline-block;
