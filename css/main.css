@@ -297,7 +297,7 @@ a:hover {
       #projects #about_text {
         left: 5%;
         right: 5%;
-        max-height: 80vh;
+        max-height: 60vh;
         overflow-y: scroll;
         padding: 2rem; } }
     #projects #about_text p {
