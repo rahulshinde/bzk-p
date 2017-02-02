@@ -16,6 +16,16 @@ $(document).ready( function(){
 
   loadBouncingImages();
 
+  $('#about_link').on('click', function(){
+    var string = $(this).text();
+    if (string.includes('?')) {
+      $(this).empty().append('Close');
+    }else{
+      $(this).empty().append('? ? ?');
+    };
+    $('#about_text').toggleClass('show');
+  })
+
   //slideshow
 
   slideshowSetUp();

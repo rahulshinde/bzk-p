@@ -179,11 +179,6 @@ a:hover {
       height: auto;
       opacity: 1;
       z-index: 100; }
-  #home a:link,
-  #home a:visited {
-    color: blue; }
-  #home a:hover {
-    text-decoration: none; }
   #home .list {
     text-align: center;
     line-height: 1.2em; }
@@ -221,10 +216,10 @@ a:hover {
         text-decoration: none;
         cursor: pointer; }
     #projects header #about_link {
+      width: 15%;
       text-align: right;
       display: inline-block;
       vertical-align: top;
-      width: 15%;
       text-transform: uppercase; }
     #projects header #title {
       display: inline-block;
@@ -252,6 +247,7 @@ a:hover {
         opacity: 1;
         z-index: 100; }
   #projects #about_text {
+    display: none;
     position: fixed;
     left: 25%;
     right: 25%;
@@ -270,6 +266,8 @@ a:hover {
     #projects #about_text .highlight {
       font-family: 'Astloch', serif;
       font-size: 1.2rem; }
+    #projects #about_text.show {
+      display: block; }
   #projects nav {
     /*img{
       position: fixed;
@@ -280,8 +278,8 @@ a:hover {
       position: fixed;
       top: 0;
       bottom: 0;
-      width: 11rem;
-      padding: 0 1rem;
+      width: 10rem;
+      padding: 0 2rem;
       z-index: 5  0;
       vertical-align: middle;
       /*background: red;*/ }
@@ -310,8 +308,8 @@ a:hover {
   #projects .slideshow_container {
     position: fixed;
     width: 100%;
-    top: 10vh;
-    bottom: 10vh;
+    top: 12vh;
+    bottom: 12vh;
     text-align: center;
     z-index: -100; }
   #projects .slide {
@@ -325,11 +323,11 @@ a:hover {
       display: inline-block; }
   #projects .embed-container {
     position: relative;
-    padding-bottom: 45%;
+    padding-bottom: 40%;
     height: 0;
     overflow: hidden;
-    margin: 2rem auto;
-    width: 80%; }
+    margin: 0 auto;
+    width: 71%; }
   #projects .embed-container iframe,
   #projects .embed-container object,
   #projects .embed-container embed {
