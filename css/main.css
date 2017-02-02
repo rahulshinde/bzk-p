@@ -215,7 +215,11 @@ a:hover {
     @media screen and (max-width: 786px) {
       #projects header {
         padding: 1rem;
-        font-size: 1.8rem; } }
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 550px) {
+      #projects header {
+        padding: 1rem;
+        font-size: 3.5rem; } }
     #projects header h3 {
       font-family: 'Alegreya Sans', sans-serif;
       color: blue;
@@ -224,7 +228,7 @@ a:hover {
         text-decoration: none;
         cursor: pointer; }
     #projects header #about_link {
-      width: 20%;
+      width: 28%;
       text-align: right;
       display: inline-block;
       vertical-align: top;
@@ -232,7 +236,7 @@ a:hover {
     #projects header #title {
       display: inline-block;
       vertical-align: middle;
-      width: 55%;
+      width: 35%;
       font-family: 'Astloch', serif;
       font-size: 1.4rem; }
       @media screen and (max-width: 1000px) {
@@ -240,12 +244,16 @@ a:hover {
           font-size: 1.8rem; } }
       @media screen and (max-width: 786px) {
         #projects header #title {
-          font-size: 2.5rem; } }
+          font-size: 3.2rem;
+          line-height: 1.1em; } }
+      @media screen and (max-width: 550px) {
+        #projects header #title {
+          font-size: 5rem; } }
     #projects header #project_link {
       text-align: left;
       display: inline-block;
       vertical-align: top;
-      width: 20%;
+      width: 28%;
       z-index: 10; }
     #projects header #dropdown_links {
       display: none;
@@ -267,11 +275,16 @@ a:hover {
     right: 25%;
     top: 50%;
     transform: translateY(-50%);
-    max-height: 40rem;
+    /*max-height: 40rem;*/
     padding: 1rem;
     background-color: white;
     border: 1px solid black;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4); }
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    z-index: 2000; }
+    @media screen and (max-width: 786px) {
+      #projects #about_text {
+        left: 10%;
+        right: 10%; } }
     #projects #about_text p {
       font-family: 'Alegreya Sans', sans-serif;
       font-weight: lighter;
@@ -280,12 +293,18 @@ a:hover {
       @media screen and (max-width: 1000px) {
         #projects #about_text p {
           font-size: 1.4rem; } }
+      @media screen and (max-width: 786px) {
+        #projects #about_text p {
+          font-size: 1.8rem; } }
     #projects #about_text .highlight {
       font-family: 'Astloch', serif;
       font-size: 1.2rem; }
       @media screen and (max-width: 1000px) {
         #projects #about_text .highlight {
           font-size: 1.4rem; } }
+      @media screen and (max-width: 786px) {
+        #projects #about_text .highlight {
+          font-size: 2rem; } }
     #projects #about_text.show {
       display: block; }
   #projects nav {
@@ -307,6 +326,10 @@ a:hover {
         #projects nav div {
           width: 13rem;
           padding: 0 1rem; } }
+      @media screen and (max-width: 786px) {
+        #projects nav div {
+          width: 15rem;
+          padding: 0 0rem; } }
       #projects nav div img {
         width: 100%;
         margin-top: 50vh;
@@ -332,6 +355,9 @@ a:hover {
     @media screen and (max-width: 1000px) {
       #projects #description {
         font-size: 1.4rem; } }
+    @media screen and (max-width: 786px) {
+      #projects #description {
+        font-size: 1.8rem; } }
   #projects .slideshow_container {
     position: fixed;
     width: 100%;
