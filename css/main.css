@@ -219,7 +219,7 @@ a:hover {
     @media screen and (max-width: 550px) {
       #projects header {
         padding: 1rem;
-        font-size: 3.8rem; } }
+        font-size: 4rem; } }
     #projects header h3 {
       font-family: 'Alegreya Sans', sans-serif;
       color: blue;
@@ -231,7 +231,7 @@ a:hover {
       width: 15%;
       text-align: right;
       display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       text-transform: uppercase; }
     #projects header #title {
       display: inline-block;
@@ -252,7 +252,7 @@ a:hover {
     #projects header #project_link {
       text-align: left;
       display: inline-block;
-      vertical-align: top;
+      vertical-align: middle;
       width: 15%;
       z-index: 10; }
     #projects header #dropdown_links {
@@ -265,11 +265,11 @@ a:hover {
         display: block;
         /*text-transform: uppercase;*/
         margin-bottom: 0.2rem; }
-        @media screen and (max-width: 550px) {
+        @media screen and (max-width: 786px) {
           #projects header #dropdown_links a:link,
           #projects header #dropdown_links a:visited {
             padding: 0.5rem 0.5rem 0.5rem 1rem;
-            margin-bottom: 1rem;
+            margin-top: 1rem;
             /*background-color: white;*/ } }
       #projects header #dropdown_links.show {
         display: block;
