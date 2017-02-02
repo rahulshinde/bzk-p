@@ -365,7 +365,7 @@ a:hover {
         font-size: 1.4rem; } }
     @media screen and (max-width: 786px) {
       #projects #description {
-        font-size: 1.8rem; } }
+        font-size: 3.8rem; } }
   #projects .slideshow_container {
     position: fixed;
     width: 100%;
