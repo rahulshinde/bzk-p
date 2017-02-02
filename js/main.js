@@ -26,6 +26,17 @@ $(document).ready( function(){
     $('#about_text').toggleClass('show');
   })
 
+  $('#cv').on('click', function(){
+    var string = $(this).text();
+    if (string.includes('V')) {
+      $(this).empty().append('Close');
+    }else{
+      $(this).empty().append('CV');
+    };
+    $('#bio_container').toggleClass('show');
+    $('#cv_container').toggleClass('show');
+  })
+
   //slideshow
 
   slideshowSetUp();

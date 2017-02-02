@@ -54,10 +54,14 @@ table {
   border-spacing: 0; }
 
 a:link,
-a:visited {
-  color: blue; }
+a:visited,
+#cv {
+  color: blue;
+  text-decoration: underline; }
 
-a:hover {
+a:hover,
+#cv:hover {
+  cursor: pointer;
   text-decoration: none; }
 
 #home {
@@ -70,7 +74,7 @@ a:hover {
     display: inline-block;
     width: 40%;
     vertical-align: middle;
-    margin: 4rem 1rem;
+    margin: 0rem 1rem;
     line-height: 1.2em; }
     @media screen and (max-width: 1000px) {
       #home .column {
@@ -94,6 +98,18 @@ a:hover {
       display: block;
       margin: auto;
       width: 80%; }
+  #home #bio_container {
+    margin: 4rem 1rem;
+    display: none; }
+    @media screen and (max-width: 786px) {
+      #home #bio_container {
+        margin: 0 auto;
+        display: block; } }
+    #home #bio_container.show {
+      display: inline-block; }
+      @media screen and (max-width: 786px) {
+        #home #bio_container.show {
+          display: block; } }
   #home #recent_work {
     position: fixed;
     width: 50%;
@@ -150,14 +166,24 @@ a:hover {
     left: 1rem;
     text-align: left;
     text-transform: uppercase;
-    line-height: 1.4em; }
+    line-height: 1.4em;
+    z-index: 1000; }
     @media screen and (max-width: 1000px) {
       #home .links {
+        font-size: 1.35rem;
         line-height: 1.6em; } }
     @media screen and (max-width: 786px) {
       #home .links {
         padding-bottom: 5rem;
-        position: static; } }
+        position: static;
+        font-size: 2.5rem;
+        display: block;
+        width: 80%;
+        margin: 0 auto; } }
+    @media screen and (max-width: 550px) {
+      #home .links {
+        width: 90%;
+        font-size: 4rem; } }
   #home #dropdown {
     color: blue;
     text-decoration: underline; }
@@ -187,7 +213,10 @@ a:hover {
     font-family: 'Astloch', serif;
     text-align: center; }
   #home .normal {
-    font-weight: normal; }
+    font-weight: normal;
+    text-transform: uppercase; }
+  #home .italic {
+    font-style: italic; }
   #home #bio {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -198,6 +227,37 @@ a:hover {
     @media screen and (max-width: 786px) {
       #home #bio {
         margin-bottom: 6rem; } }
+  #home #cv_container {
+    margin-top: 4rem;
+    display: none;
+    width: 30rem;
+    margin-left: 35rem;
+    z-index: 10000;
+    line-height: 1.2em;
+    text-align: center; }
+    #home #cv_container h1 {
+      padding-left: 0;
+      font-family: 'Astloch', serif;
+      text-align: center;
+      margin-bottom: 0.8rem;
+      line-height: 1.3em; }
+    #home #cv_container p {
+      padding-bottom: 0.7rem;
+      text-align: left;
+      display: inline-block;
+      vertical-align: top; }
+      #home #cv_container p.title {
+        padding-top: 0.5rem;
+        width: 100%; }
+      #home #cv_container p.date {
+        width: 30%; }
+      #home #cv_container p.item {
+        width: 70%; }
+    #home #cv_container .date {
+      padding-left: 0;
+      padding-right: 3rem; }
+    #home #cv_container.show {
+      display: block; }
 
 #projects {
   overflow-x: hidden; }
