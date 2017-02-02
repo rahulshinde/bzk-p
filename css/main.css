@@ -349,8 +349,7 @@ a:hover {
   text-align: center; }
   #grab_bag .image {
     display: inline-block;
-    vertical-align: top;
-    padding: 3rem; }
+    vertical-align: middle; }
 
 #bouncingImagesLyr0 img {
   width: 100%; }
