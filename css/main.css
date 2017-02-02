@@ -214,7 +214,7 @@ a:hover,
     text-align: center; }
   #home .normal {
     font-weight: normal;
-    text-transform: uppercase; }
+    /*text-transform: uppercase;*/ }
   #home .italic {
     font-style: italic; }
   #home #bio {
