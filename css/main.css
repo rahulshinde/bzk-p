@@ -228,7 +228,7 @@ a:hover {
         text-decoration: none;
         cursor: pointer; }
     #projects header #about_link {
-      width: 28%;
+      width: 15%;
       text-align: right;
       display: inline-block;
       vertical-align: top;
@@ -236,7 +236,7 @@ a:hover {
     #projects header #title {
       display: inline-block;
       vertical-align: middle;
-      width: 35%;
+      width: 60%;
       font-family: 'Astloch', serif;
       font-size: 1.4rem; }
       @media screen and (max-width: 1000px) {
@@ -253,16 +253,24 @@ a:hover {
       text-align: left;
       display: inline-block;
       vertical-align: top;
-      width: 28%;
+      width: 15%;
       z-index: 10; }
     #projects header #dropdown_links {
       display: none;
-      z-index: -1000; }
+      z-index: -1000;
+      position: absolute; }
       #projects header #dropdown_links a:link,
       #projects header #dropdown_links a:visited {
-        padding: 0.3rem 0 0.3rem 1rem;
+        padding: 0.3rem 0.3rem 0.3rem 1rem;
         display: block;
-        /*text-transform: uppercase;*/ }
+        /*text-transform: uppercase;*/
+        margin-bottom: 0.2rem; }
+        @media screen and (max-width: 550px) {
+          #projects header #dropdown_links a:link,
+          #projects header #dropdown_links a:visited {
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            margin-bottom: 1rem;
+            /*background-color: white;*/ } }
       #projects header #dropdown_links.show {
         display: block;
         height: auto;
