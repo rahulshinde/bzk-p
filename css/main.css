@@ -417,7 +417,9 @@ a:hover {
     height: 0;
     overflow: hidden;
     margin: 0 auto;
-    width: 71%; }
+    width: 71%;
+    display: inline-block;
+    vertical-align: middle; }
   #projects .embed-container iframe,
   #projects .embed-container object,
   #projects .embed-container embed {
