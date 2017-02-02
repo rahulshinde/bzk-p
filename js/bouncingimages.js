@@ -23,7 +23,7 @@ bouncingImages.imgSrc = 'img/home/3.png';
 bouncingImages.frameRate = 30;
 
 bouncingImages.minRandomSpeed = 2;
-bouncingImages.maxRandomSpeed = 8;
+bouncingImages.maxRandomSpeed = 2;
 
 // MAIN:
 
