@@ -80,7 +80,7 @@ a:hover {
         display: block;
         width: 80%;
         margin: 0 auto;
-        font-size: 3rem; } }
+        font-size: 2.5rem; } }
     @media screen and (max-width: 550px) {
       #home .column {
         width: 90%;
@@ -126,7 +126,7 @@ a:hover {
           font-size: 2.2rem; } }
       @media screen and (max-width: 786px) {
         #home #recent_work h1 {
-          font-size: 4rem; } }
+          font-size: 3.2rem; } }
       @media screen and (max-width: 550px) {
         #home #recent_work h1 {
           font-size: 5rem; } }
@@ -140,7 +140,7 @@ a:hover {
           line-height: 1.6em; } }
       @media screen and (max-width: 786px) {
         #home #recent_work p {
-          font-size: 3.2rem; } }
+          font-size: 2.5rem; } }
       @media screen and (max-width: 550px) {
         #home #recent_work p {
           font-size: 4.2rem; } }
@@ -156,6 +156,7 @@ a:hover {
         line-height: 1.6em; } }
     @media screen and (max-width: 786px) {
       #home .links {
+        padding-bottom: 5rem;
         position: static; } }
   #home #dropdown {
     color: blue;
