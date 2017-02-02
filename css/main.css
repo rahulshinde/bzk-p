@@ -398,7 +398,8 @@ a:hover {
     top: 12vh;
     bottom: 12vh;
     text-align: center;
-    z-index: -100; }
+    z-index: -100;
+    line-height: 74vh; }
   #projects .slide {
     display: none;
     max-height: 100%;
@@ -408,7 +409,8 @@ a:hover {
     z-index: -100; }
     #projects .slide.show {
       opacity: 1;
-      display: inline-block; }
+      display: inline-block;
+      vertical-align: middle; }
   #projects .embed-container {
     position: relative;
     padding-bottom: 40%;
