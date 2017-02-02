@@ -293,6 +293,13 @@ a:hover {
       #projects #about_text {
         left: 10%;
         right: 10%; } }
+    @media screen and (max-width: 550px) {
+      #projects #about_text {
+        left: 5%;
+        right: 5%;
+        max-height: 80vh;
+        overflow-y: scroll;
+        padding: 2rem; } }
     #projects #about_text p {
       font-family: 'Alegreya Sans', sans-serif;
       font-weight: lighter;
@@ -304,6 +311,9 @@ a:hover {
       @media screen and (max-width: 786px) {
         #projects #about_text p {
           font-size: 1.8rem; } }
+      @media screen and (max-width: 550px) {
+        #projects #about_text p {
+          font-size: 3.8rem; } }
     #projects #about_text .highlight {
       font-family: 'Astloch', serif;
       font-size: 1.2rem; }
@@ -313,6 +323,9 @@ a:hover {
       @media screen and (max-width: 786px) {
         #projects #about_text .highlight {
           font-size: 2rem; } }
+      @media screen and (max-width: 550px) {
+        #projects #about_text .highlight {
+          font-size: 4rem; } }
     #projects #about_text.show {
       display: block; }
   #projects nav {
@@ -338,17 +351,27 @@ a:hover {
         #projects nav div {
           width: 15rem;
           padding: 0 0rem; } }
+      @media screen and (max-width: 550px) {
+        #projects nav div {
+          width: 20rem;
+          padding: 0 0rem; } }
       #projects nav div img {
         width: 100%;
         margin-top: 50vh;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%); }
+        @media screen and (max-width: 550px) {
+          #projects nav div img {
+            width: 80%; } }
       #projects nav div:hover {
         cursor: pointer; }
     #projects nav #nav_left {
       left: 0; }
     #projects nav #nav_right {
       right: 0; }
+      @media screen and (max-width: 550px) {
+        #projects nav #nav_right img {
+          float: right; } }
     #projects nav #arrow_left {
       left: 0rem; }
     #projects nav #arrow_right {
@@ -364,6 +387,9 @@ a:hover {
       #projects #description {
         font-size: 1.4rem; } }
     @media screen and (max-width: 786px) {
+      #projects #description {
+        font-size: 1.8rem; } }
+    @media screen and (max-width: 550px) {
       #projects #description {
         font-size: 3.8rem; } }
   #projects .slideshow_container {
