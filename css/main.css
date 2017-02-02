@@ -208,6 +208,14 @@ a:hover {
     vertical-align: middle;
     text-align: center;
     z-index: 1000; }
+    @media screen and (max-width: 1000px) {
+      #projects header {
+        margin-top: 1.5rem;
+        font-size: 1.4rem; } }
+    @media screen and (max-width: 786px) {
+      #projects header {
+        padding: 1rem;
+        font-size: 1.8rem; } }
     #projects header h3 {
       font-family: 'Alegreya Sans', sans-serif;
       color: blue;
@@ -216,7 +224,7 @@ a:hover {
         text-decoration: none;
         cursor: pointer; }
     #projects header #about_link {
-      width: 15%;
+      width: 20%;
       text-align: right;
       display: inline-block;
       vertical-align: top;
@@ -224,14 +232,20 @@ a:hover {
     #projects header #title {
       display: inline-block;
       vertical-align: middle;
-      width: 60%;
+      width: 55%;
       font-family: 'Astloch', serif;
       font-size: 1.4rem; }
+      @media screen and (max-width: 1000px) {
+        #projects header #title {
+          font-size: 1.8rem; } }
+      @media screen and (max-width: 786px) {
+        #projects header #title {
+          font-size: 2.5rem; } }
     #projects header #project_link {
       text-align: left;
       display: inline-block;
       vertical-align: top;
-      width: 15%;
+      width: 20%;
       z-index: 10; }
     #projects header #dropdown_links {
       display: none;
@@ -263,9 +277,15 @@ a:hover {
       font-weight: lighter;
       font-size: 1.1rem;
       line-height: 1.3em; }
+      @media screen and (max-width: 1000px) {
+        #projects #about_text p {
+          font-size: 1.4rem; } }
     #projects #about_text .highlight {
       font-family: 'Astloch', serif;
       font-size: 1.2rem; }
+      @media screen and (max-width: 1000px) {
+        #projects #about_text .highlight {
+          font-size: 1.4rem; } }
     #projects #about_text.show {
       display: block; }
   #projects nav {
@@ -280,9 +300,13 @@ a:hover {
       bottom: 0;
       width: 10rem;
       padding: 0 2rem;
-      z-index: 5  0;
+      z-index: 50;
       vertical-align: middle;
       /*background: red;*/ }
+      @media screen and (max-width: 1000px) {
+        #projects nav div {
+          width: 13rem;
+          padding: 0 1rem; } }
       #projects nav div img {
         width: 100%;
         margin-top: 50vh;
@@ -305,6 +329,9 @@ a:hover {
     bottom: 1rem;
     width: 100%;
     text-align: center; }
+    @media screen and (max-width: 1000px) {
+      #projects #description {
+        font-size: 1.4rem; } }
   #projects .slideshow_container {
     position: fixed;
     width: 100%;
@@ -336,13 +363,6 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%; }
-  #projects #facebook_link {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase; }
 
 #grab_bag {
   display: inline-block;
