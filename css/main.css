@@ -53,6 +53,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/*FONT SIZES*/
 a:link,
 a:visited,
 #cv {
@@ -135,17 +136,17 @@ a:hover,
       font-family: 'Astloch', serif;
       text-align: center;
       /*margin-bottom: 0.6rem;*/
-      font-size: 1.8rem;
+      font-size: 2.5rem;
       line-height: 1.4em; }
       @media screen and (max-width: 1000px) {
         #home #recent_work h1 {
-          font-size: 2.2rem; } }
+          font-size: 2.8rem; } }
       @media screen and (max-width: 786px) {
         #home #recent_work h1 {
-          font-size: 3.2rem; } }
+          font-size: 3.8rem; } }
       @media screen and (max-width: 550px) {
         #home #recent_work h1 {
-          font-size: 5rem; } }
+          font-size: 6rem; } }
     #home #recent_work p {
       /*text-transform: uppercase;*/
       font-size: 1.4rem;
@@ -211,9 +212,11 @@ a:hover,
     line-height: 1.2em; }
   #home .highlight {
     font-family: 'Astloch', serif;
+    font-size: 1.1em;
     text-align: center; }
   #home .normal {
     font-weight: normal;
+    letter-spacing: 0.1rem;
     /*text-transform: uppercase;*/ }
   #home .italic {
     font-style: italic; }
@@ -273,7 +276,6 @@ a:hover,
       #home #cv_container p.title {
         text-transform: uppercase;
         font-size: 0.8rem;
-        letter-spacing: 0.1rem;
         padding-top: 0.5rem;
         width: 100%; }
         @media screen and (max-width: 1000px) {
@@ -306,7 +308,8 @@ a:hover,
     display: inline-block;
     vertical-align: middle;
     text-align: center;
-    z-index: 1000; }
+    z-index: 1000;
+    font-size: 1.2rem; }
     @media screen and (max-width: 1000px) {
       #projects header {
         margin-top: 1.5rem;
@@ -337,7 +340,7 @@ a:hover,
       vertical-align: middle;
       width: 60%;
       font-family: 'Astloch', serif;
-      font-size: 1.4rem; }
+      font-size: 1.8rem; }
       @media screen and (max-width: 1000px) {
         #projects header #title {
           font-size: 1.8rem; } }
@@ -481,7 +484,8 @@ a:hover,
     position: fixed;
     bottom: 1rem;
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    font-size: 0.8rem; }
     @media screen and (max-width: 1000px) {
       #projects #description {
         font-size: 1.4rem; } }
@@ -494,7 +498,7 @@ a:hover,
   #projects .slideshow_container {
     position: fixed;
     width: 100%;
-    top: 12vh;
+    top: 14vh;
     bottom: 12vh;
     text-align: center;
     z-index: -100;
