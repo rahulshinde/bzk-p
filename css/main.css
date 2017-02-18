@@ -76,6 +76,7 @@ a:hover,
     width: 40%;
     vertical-align: middle;
     margin: 0rem 1rem;
+    padding-left: 5rem;
     line-height: 1.2em; }
     @media screen and (max-width: 1000px) {
       #home .column {
@@ -83,6 +84,7 @@ a:hover,
     @media screen and (max-width: 786px) {
       #home .column {
         display: block;
+        padding-left: 0rem;
         width: 80%;
         margin: 0 auto;
         font-size: 2.5rem; } }
@@ -114,11 +116,16 @@ a:hover,
   #home #recent_work {
     position: fixed;
     width: 50%;
-    top: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    left: 29rem;
     margin-bottom: 3rem; }
     @media screen and (max-width: 786px) {
       #home #recent_work {
         position: static;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
         width: 80%;
         margin: 5rem auto; } }
     #home #recent_work img {
@@ -164,8 +171,8 @@ a:hover,
   #home .links {
     position: fixed;
     bottom: 1rem;
-    left: 1rem;
-    text-align: left;
+    right: 1rem;
+    text-align: right;
     text-transform: uppercase;
     line-height: 1.4em;
     z-index: 1000; }
