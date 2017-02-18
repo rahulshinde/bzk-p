@@ -57,7 +57,7 @@ changeRootFontSize = function() {
 }
 
 slideshowSetUp = function() {
-  Site.slideshow_array = $('.slideshow_container img');
+  Site.slideshow_array = $('.slideshow_container .slide');
   Site.slideshow_length = Site.slideshow_array.length - 1;
 }
 
