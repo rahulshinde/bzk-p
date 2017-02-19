@@ -76,7 +76,6 @@ a:hover,
     width: 40%;
     vertical-align: middle;
     margin: 0rem 1rem;
-    padding-left: 5rem;
     line-height: 1.2em; }
     @media screen and (max-width: 1000px) {
       #home .column {
@@ -102,7 +101,7 @@ a:hover,
       margin: auto;
       width: 80%; }
   #home #bio_container {
-    margin: 1rem 1rem 4rem 1rem;
+    margin: 3rem 1rem 4rem 29rem;
     display: none; }
     @media screen and (max-width: 786px) {
       #home #bio_container {
@@ -115,11 +114,11 @@ a:hover,
           display: block; } }
   #home #recent_work {
     position: fixed;
-    width: 50%;
+    width: 35%;
     top: 50%;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    left: 29rem;
+    left: 0rem;
     margin-bottom: 3rem; }
     @media screen and (max-width: 786px) {
       #home #recent_work {
@@ -238,11 +237,11 @@ a:hover,
       #home #bio {
         margin-bottom: 6rem; } }
   #home #cv_container {
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 4rem;
     display: none;
     width: 30rem;
-    margin-left: 5rem;
+    margin-left: 29rem;
     z-index: 10000;
     line-height: 1.2em;
     text-align: center; }
