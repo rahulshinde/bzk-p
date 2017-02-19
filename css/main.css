@@ -101,7 +101,7 @@ a:hover,
       margin: auto;
       width: 80%; }
   #home #bio_container {
-    margin: 3rem 1rem 4rem 29rem;
+    margin: 3rem 1rem 4rem 28.3rem;
     display: none; }
     @media screen and (max-width: 786px) {
       #home #bio_container {
@@ -241,7 +241,7 @@ a:hover,
     margin-bottom: 4rem;
     display: none;
     width: 30rem;
-    margin-left: 29rem;
+    margin-left: 28.3rem;
     z-index: 10000;
     line-height: 1.2em;
     text-align: center; }
