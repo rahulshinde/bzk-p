@@ -30,7 +30,7 @@ $(document).ready( function(){
     var string = $(this).text();
     if (string.includes('on')) {
       $(this).empty().append('Close');
-      $('#cv').empty().append('CV');
+      $('#cv').empty().append('C.V.');
       $('#contact_container').addClass('show');
       $('#bio_container').removeClass('show');
       $('#cv_container').removeClass('show');
@@ -50,7 +50,7 @@ $(document).ready( function(){
       $('#bio_container').removeClass('show');
       $('#cv_container').addClass('show');
     }else{
-      $(this).empty().append('CV');
+      $(this).empty().append('C.V.');
       $('#bio_container').addClass('show');
       $('#cv_container').removeClass('show');
     };
