@@ -236,7 +236,8 @@ a:hover,
     @media screen and (max-width: 786px) {
       #home #bio {
         margin-bottom: 6rem; } }
-  #home #cv_container {
+  #home #cv_container,
+  #home #contact_container {
     margin-top: 3rem;
     margin-bottom: 4rem;
     display: none;
@@ -246,64 +247,89 @@ a:hover,
     line-height: 1.2em;
     text-align: center; }
     @media screen and (max-width: 786px) {
-      #home #cv_container {
+      #home #cv_container,
+      #home #contact_container {
         width: 90%;
         margin-left: 5%; } }
-    #home #cv_container h1 {
+    #home #cv_container h1,
+    #home #contact_container h1 {
       padding-left: 0;
       font-family: 'Astloch', serif;
       text-align: center;
       margin-bottom: 0.8rem;
       line-height: 1.3em; }
       @media screen and (max-width: 1000px) {
-        #home #cv_container h1 {
+        #home #cv_container h1,
+        #home #contact_container h1 {
           font-size: 1.6rem; } }
       @media screen and (max-width: 786px) {
-        #home #cv_container h1 {
+        #home #cv_container h1,
+        #home #contact_container h1 {
           font-size: 3.8rem; } }
       @media screen and (max-width: 550px) {
-        #home #cv_container h1 {
+        #home #cv_container h1,
+        #home #contact_container h1 {
           font-size: 4.5rem; } }
-    #home #cv_container p {
+    #home #cv_container p,
+    #home #contact_container p {
       padding-bottom: 0.7rem;
       text-align: left;
       display: inline-block;
       vertical-align: top;
       line-height: 1.2em; }
       @media screen and (max-width: 1000px) {
-        #home #cv_container p {
+        #home #cv_container p,
+        #home #contact_container p {
           font-size: 1.35rem; } }
       @media screen and (max-width: 786px) {
-        #home #cv_container p {
+        #home #cv_container p,
+        #home #contact_container p {
           font-size: 2.5rem; } }
       @media screen and (max-width: 550px) {
-        #home #cv_container p {
+        #home #cv_container p,
+        #home #contact_container p {
           font-size: 4rem; } }
-      #home #cv_container p.title {
+      #home #cv_container p.title,
+      #home #contact_container p.title {
         text-transform: uppercase;
         font-size: 0.8rem;
         padding-top: 0.5rem;
         width: 100%; }
         @media screen and (max-width: 1000px) {
-          #home #cv_container p.title {
+          #home #cv_container p.title,
+          #home #contact_container p.title {
             font-size: 1.1rem; } }
         @media screen and (max-width: 786px) {
-          #home #cv_container p.title {
+          #home #cv_container p.title,
+          #home #contact_container p.title {
             margin-top: 2rem;
             margin-bottom: 1rem;
             font-size: 2.3rem; } }
         @media screen and (max-width: 550px) {
-          #home #cv_container p.title {
+          #home #cv_container p.title,
+          #home #contact_container p.title {
             font-size: 4.8rem; } }
-      #home #cv_container p.date {
+      #home #cv_container p.date,
+      #home #contact_container p.date {
         width: 30%; }
-      #home #cv_container p.item {
+      #home #cv_container p.item,
+      #home #contact_container p.item {
         width: 70%; }
-    #home #cv_container .date {
+    #home #cv_container .date,
+    #home #contact_container .date {
       padding-left: 0;
       padding-right: 3rem; }
-    #home #cv_container.show {
+    #home #cv_container.show,
+    #home #contact_container.show {
       display: block; }
+  #home #contact {
+    color: #cc9966;
+    text-decoration: underline; }
+    #home #contact:hover {
+      text-decoration: none;
+      cursor: pointer; }
+  #home #contact_container {
+    margin-top: 30vh; }
 
 #projects {
   overflow-x: hidden; }

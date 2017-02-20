@@ -26,15 +26,34 @@ $(document).ready( function(){
     $('#about_text').toggleClass('show');
   })
 
+  $('#contact').on('click', function(){
+    var string = $(this).text();
+    if (string.includes('on')) {
+      $(this).empty().append('Close');
+      $('#cv').empty().append('CV');
+      $('#contact_container').addClass('show');
+      $('#bio_container').removeClass('show');
+      $('#cv_container').removeClass('show');
+    }else{
+      $(this).empty().append('Contact');
+      $('#contact_container').removeClass('show');
+      $('#bio_container').addClass('show');
+    };
+  })
+
   $('#cv').on('click', function(){
     var string = $(this).text();
     if (string.includes('V')) {
       $(this).empty().append('Close');
+      $('#contact').empty().append('Contact');
+      $('#contact_container').removeClass('show');
+      $('#bio_container').removeClass('show');
+      $('#cv_container').addClass('show');
     }else{
       $(this).empty().append('CV');
+      $('#bio_container').addClass('show');
+      $('#cv_container').removeClass('show');
     };
-    $('#bio_container').toggleClass('show');
-    $('#cv_container').toggleClass('show');
   })
 
   //slideshow
